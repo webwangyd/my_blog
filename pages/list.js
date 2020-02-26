@@ -1,12 +1,13 @@
+import React from 'react'
 import Head from 'next/head'
 import {Row, Col} from 'antd'
 import Header from '../components/Header'
-const Home = () => (
-  <div className="container">
+const List = () => (
+  <>
     <Head>
-      <title>Create Next App</title>
+      <title>List</title>
     </Head>
-    <Header></Header>
+    <Header />
     <Row className="comm-main" type="flex" justify="center">
       <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}  >
         左侧
@@ -16,7 +17,8 @@ const Home = () => (
         右侧
       </Col>
     </Row>
-  </div>
+
+ </>
 )
 
-export default Home
+export default List
