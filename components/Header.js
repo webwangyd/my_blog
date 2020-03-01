@@ -1,33 +1,35 @@
 import React from 'react'
 import '../static/style/components/header.css'
 
-import {Row,Col, Menu, Icon} from 'antd'
+import {Row,Col, Menu, Icon,Affix} from 'antd'
 const Header = () => (
+<Affix offsetTop={0}>
   <div className="header">
-    <Row type="flex" justify="center">
-        <Col  xs={24} sm={24} md={10} lg={15} xl={12}>
-            <span className="header-logo">东哥</span>
-            <span className="header-txt">专注前端开发,快乐生活每一天。</span>
-        </Col>
+        <Row type="flex" justify="center">
+            <Col  xs={24} sm={24} md={10} lg={15} xl={12}>
+                <span className="header-logo">东哥</span>
+                <span className="header-txt">专注前端开发,快乐生活每一天。</span>
+            </Col>
 
-        <Col className="memu-div" xs={0} sm={0} md={14} lg={8} xl={6}>
-            <Menu  mode="horizontal">
-                <Menu.Item key="home">
-                    <Icon type="home" />
-                    首页
-                </Menu.Item>
-                <Menu.Item key="video">
-                    <Icon type="youtube" />
-                    视频
-                </Menu.Item>
-                <Menu.Item key="life">
-                    <Icon type="smile" />
-                    生活
-                </Menu.Item>
-            </Menu>
-        </Col>
-    </Row>
+            <Col className="memu-div" xs={0} sm={0} md={14} lg={8} xl={6}>
+                <Menu  mode="horizontal">
+                    <Menu.Item key="home">
+                        <Icon type="home" />
+                        首页
+                    </Menu.Item>
+                    <Menu.Item key="video">
+                        <Icon type="youtube" />
+                        视频
+                    </Menu.Item>
+                    <Menu.Item key="life">
+                        <Icon type="smile" />
+                        生活
+                    </Menu.Item>
+                </Menu>
+            </Col>
+        </Row>
  </div>
+ </Affix>
 )
 
 export default Header
